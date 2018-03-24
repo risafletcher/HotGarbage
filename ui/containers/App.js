@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import InputPreview from '../components/InputPreview';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import styled from 'styled';
+import styled from 'styled-components';
 
 class App extends Component {
     _onChange = (value) => {
