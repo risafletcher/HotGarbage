@@ -8,7 +8,7 @@ Composting is very good for sustainablility; besides reducing carbon emmisions i
 
 ### Architecture
 
-
+![alt text](https://github.com/risafletcher/HotGarbage/blob/development/ArchitectureDiagram.png)
 
 
 ### libraries
