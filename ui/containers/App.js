@@ -7,6 +7,8 @@ import About from '../components/about';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import IconButton from 'material-ui/IconButton';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import AppBar from 'material-ui/AppBar';
@@ -33,7 +35,7 @@ class App extends Component {
 
     render () {
         return (
-            <MuiThemeProvider>
+            <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
                 <div>
                 <AppBar title="🔥🗑️Hot Garbage🗑️🔥" />
                 
