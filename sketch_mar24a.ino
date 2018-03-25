@@ -31,8 +31,11 @@ AdafruitIO_Feed *humidity = aio.feed("humidity");
 #define DHTPIN 2     // what pin we're connected to
 #define DHTTYPE DHT22   // DHT 22  (AM2302)
 
-int maxHum = 60;
+int minHum = 60;
 int maxTemp = 40;
+int redLED = 0;
+int greenLED = 16;
+int maxGas = 50; // ;)
 
 DHT dht(DHTPIN, DHTTYPE);
 
@@ -59,6 +62,9 @@ void setup() {
     // we are connected
   Serial.println();
   Serial.println(aio.statusText());
+
+  pinMode(redLED, OUTPUT); //pin0 = RED LED
+  pinMode(greenLED, OUTPUT); //pin16 = GREEN LED
 
 }
 
@@ -101,6 +107,18 @@ void setup() {
    Serial.print("Temperature: ");
    Serial.print(t);
    Serial.println(" *C ");
+
+// light up the status LEDs
+  if(reading>=maxGas || t>=maxTemp){
+  digitalWrite(redLED, HIGH);
+  digitalWrite(greenLED, LOW);
+  delay(500);
+  }
+  if(reading<maxGas && t<maxTemp){
+  digitalWrite(greenLED, HIGH);
+  digitalWrite(redLED, LOW);
+  delay(500);
+  }
 
    temperature->save(t);
    humidity->save(h);
