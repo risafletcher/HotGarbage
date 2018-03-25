@@ -1,9 +1,13 @@
-# Optimal Conditions Compost Monitor  
+# Optimal Conditions Compost Monitor
 ### By team #1 HotGarbage
 
-When composting optimal conditions must be maintained in order to prevent production of compounds 
+When composting optimal conditions must be maintained in order to prevent production of Methane and other volitile compounds which will increase carbon emmions 
 
-Composting is very good for sustainablility; besides reducing carbon emmisions it has many additonal benefits
+In addition to carbon sequestration composting also supports sustainablility through:
+* improved soil health
+* reduced soil loss
+* increased water infiltration
+* increased water storage
 
 
 ### Architecture
