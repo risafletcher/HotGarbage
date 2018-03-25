@@ -1,12 +1,11 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
-import messageReducer from './reducers/message';
+import { createStore, applyMiddleware } from 'redux';
+import dataReducer from './reducers/dataReducer';
 import thunk from 'redux-thunk';
+import { getTemperatureData } from './actions/dataActions';
 
-const reducer = combineReducers({
- messageReducer
-})
 const store = createStore(
- reducer,
- applyMiddleware(thunk)
-)
+  dataReducer,
+  applyMiddleware(thunk)
+);
+
 export default store;
