@@ -11,6 +11,8 @@ class Temperature extends Component {
 
  render () {
 
+  const { last_value, updated_at } = this.props.temperature
+
    return (
      <div>
           Test
@@ -20,7 +22,9 @@ class Temperature extends Component {
 }
 
 const mapStateToProps = (state, props) => {
-  return {}
+  return {
+    temperature: state.temperature
+  }
 }
 
 export default connect(mapStateToProps, { getTemperatureData })(Temperature);

@@ -2,17 +2,27 @@ import { types } from '../actions/dataActions';
 import _ from 'lodash';
 
 const initState = {
- temperature: {},
- humidity: {},
- gas: {}
+ temperature: {
+   isFetching: true
+ },
+ humidity: {
+   isFetching: true
+ },
+ gas: {
+   isFetching: true
+ }
 }
 
 export default (state = initState, action) => {
   switch(action.type) {
     case types.FETCH_TEMPERATURE:
+      const stateClone = _.cloneDeep(state);
+
       return _.assign({}, 
-        state, 
-        {temperature: action.payload})
+        stateClone, 
+        {temperature: action.payload},
+        {isFetching: false}
+      )
     case types.FETCH_HUMIDITY_LEVEL:
       return _.assign({}, 
         state, 
