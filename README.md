@@ -1,5 +1,5 @@
 # Optimal Conditions Compost Monitor  
-### By by team #1 HotGarbage
+### By team #1 HotGarbage
 
 When composting optimal conditions must be maintained in order to prevent production of compounds 
 
