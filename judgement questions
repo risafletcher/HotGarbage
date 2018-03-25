@@ -33,8 +33,7 @@ How did you leverage the IoT hardware to solve your problem?
 - Servo to demonstrate stirring ability
 
 Did you make creative hardware substitutions when you lacked the exact part you needed? 
-- Butane lighter to simulate methane produced by a bad compost pile.
-- Hair dryer to simulate the heat produced by a compost pile.
+- Needed to use a voltage divider with the gas sensor part to avoid damaging the analog port of the Feather Huzzah board, which has a max voltage of 1V
 
 Did you bring in additional hardware beside what was provided? 
 (Explain how you've expanded on what was provided)
