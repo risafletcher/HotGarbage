@@ -24,6 +24,11 @@ Did you design the experience? Did you develop a logo or visual style?
 
 Use of IoT Hardware:
 How did you leverage the IoT hardware to solve your problem? 
+- Gas sensor to sense methane
+- Temperature and humidity sensor to sense proper compost temperature and humidity
+- Output LEDs to show status
+- Servo to demonstrate stirring ability
+
 Did you make creative hardware substitutions when you lacked the exact part you needed? 
 - Butane lighter to simulate methane produced by a bad compost pile.
 - Hair dryer to simulate the heat produced by a compost pile.
