@@ -1,11 +1,13 @@
 Theme/Idea:
 How relevant is your project to our Sustainable Futures theme?
+- Landfills are the third-largest human-related producers of methane emissions in the United States, and methane is 21 times more potent than carbon dioxide as a greenhouse gas
+- composting keeps organic matter out of landfills and provides a way to turn organic material scraps into fertilizer, helping sustainable farming practices
 
 Have you articulated a problem statement and clearly shown a plan to addressing it? 
 - Composting is very beneficial but many people don't realize that there are ideal circumstances under which the magic of composting happens, or they cannot take the extra time needed to tend to their compost pile.
 - **Hot Garbage** is a device that helps take some of the work out of composting!
 - It automatically detects the presence of methane, which, in addition to being a potent greenhouse gas, is a sign that your compost pile is not properly aerated and is lacking oxygen.
-- In addition to oxygen level, it is also important for the compost pile to remain within an ideal temperature range. Composting happens best at temperatures between 49 C and 65 C. If it's too cold the composting reactions won't happen, and if it's too hot the bacteria working to compost won't be able to survive.
+- In addition to oxygen level, it is also important for the compost pile to remain within an ideal temperature range. Composting happens best at temperatures between 49 C and 65 C. If it's too cold the composting reactions won't happen, and if it's too hot the microbes working to compost won't be able to survive.
 - When **Hot Garbage** detects one or more of the following:
   * an elevated methane level, indicative of too little oxygen
   * a temperature above 65 C
@@ -19,6 +21,7 @@ How can you expand on what they built this weekend? What is the future vision of
 - Once the motor control is connected to a heavy-duty motor connected to the compost drum, it will automatically aerate the pile for you.
 - **Hot Garbage** can be improved with a durable housing for the sensors so they can be placed right in the compost pile and remain durable.
 - It can also be expanded with a water or irrigation control valve which automatically opens to add water to the compost pile when the humidity drops below an ideal level.
+   * Will also be beneficial to prevent compost fires by adding moisture
 
 Did you design the experience? Did you develop a logo or visual style?
 
@@ -35,6 +38,8 @@ Did you make creative hardware substitutions when you lacked the exact part you 
 
 Did you bring in additional hardware beside what was provided? 
 (Explain how you've expanded on what was provided)
+- Butane lighter to simulate methane produced by a bad compost pile for testing
+- Hair dryer to simulate the heat produced by a compost pile for testing
 
 Usability/Accessibility:
 Have you considered how users will interact with/find value in their product? 
