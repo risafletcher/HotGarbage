@@ -1,31 +1,12 @@
-# Optimal Conditions Compost Monitor  
+# Optimal Conditions Compost Monitor
 ### By team #1 HotGarbage
 
-When composting optimal conditions must be maintained in order to prevent production of compounds 
+When composting optimal conditions must be maintained in order to prevent production of Methane and other volitile compounds which will increase carbon emmions 
 
-Composting is very good for sustainablility; besides reducing carbon emmisions it has many additonal benefits
-
-
-### Architecture
-
-![alt text](https://github.com/risafletcher/HotGarbage/blob/development/ArchitectureDiagram.png)
-
-
-### libraries
-
-Adafruit Unified Sensor  
-
-Adafruit AM2320 sensor library  
-
-DHT sensor library  
-
-Arduino Http Client  
-
-Adafruit MQTT library  
-
-Adafruit IO Arduino  
+In addition to carbon sequestration composting also supports sustainablility through:
+* improved soil health
+* reduced soil loss
+* increased water infiltration
+* increased water storage
 
 
-### slides
-
-https://docs.google.com/presentation/d/1eKuUP0Q5nSWmeHD18059Alg20yxmESqdsJbZOGIc-W8/edit#slide=id.g35d8217c74_0_17
