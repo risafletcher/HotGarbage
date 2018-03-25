@@ -9,6 +9,8 @@ Composting is very good for sustainablility; besides reducing carbon emmisions i
 ### Architecture
 
 
+
+
 ### libraries
 
 Adafruit Unified Sensor  
@@ -22,3 +24,8 @@ Arduino Http Client
 Adafruit MQTT library  
 
 Adafruit IO Arduino  
+
+
+### slides
+
+https://docs.google.com/presentation/d/1eKuUP0Q5nSWmeHD18059Alg20yxmESqdsJbZOGIc-W8/edit#slide=id.g35d8217c74_0_17
