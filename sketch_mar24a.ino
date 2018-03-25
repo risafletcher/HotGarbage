@@ -2,6 +2,7 @@
 #include "AdafruitIO_WiFi.h"
 #include <ESP8266WiFi.h>
 #include "DHT.h"
+#include <Servo.h>
 
 /*
  *  Simple HTTP get webclient test
@@ -35,11 +36,28 @@ int minHum = 60;
 int maxTemp = 40;
 int redLED = 0;
 int greenLED = 16;
-int maxGas = 50; // ;)
+int maxGas = 100; // ;)
 
 DHT dht(DHTPIN, DHTTYPE);
 
+/* Sweep
+ by BARRAGAN <http://barraganstudio.com>
+ This example code is in the public domain.
+
+ modified 8 Nov 2013
+ by Scott Fitzgerald
+ http://www.arduino.cc/en/Tutorial/Sweep
+*/
+
+
+Servo myservo;  // create servo object to control a servo
+// twelve servo objects can be created on most boards
+
+int pos = 0;    // variable to store the servo position
+
 void setup() {
+
+  myservo.attach(15);  // attaches the servo on pin 9 to the servo object
 
   // start the serial connection
   Serial.begin(115200);
@@ -112,6 +130,15 @@ void setup() {
   if(reading>=maxGas || t>=maxTemp){
   digitalWrite(redLED, HIGH);
   digitalWrite(greenLED, LOW);
+  for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
+    // in steps of 1 degree
+    myservo.write(pos);              // tell servo to go to position in variable 'pos'
+    delay(15);                       // waits 15ms for the servo to reach the position
+  }
+  for (pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
+    myservo.write(pos);              // tell servo to go to position in variable 'pos'
+    delay(15);                       // waits 15ms for the servo to reach the position
+  }
   delay(500);
   }
   if(reading<maxGas && t<maxTemp){
@@ -124,7 +151,7 @@ void setup() {
    humidity->save(h);
    
   // wait one second (1000 milliseconds == 1 second)
-  delay(3000);
+  delay(6000);
 
 }
 
