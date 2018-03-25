@@ -23,6 +23,7 @@ AdafruitIO_WiFi aio(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
 AdafruitIO_Feed *counter = aio.feed("counter");
 AdafruitIO_Feed *temperature = aio.feed("temperature");
 AdafruitIO_Feed *humidity = aio.feed("humidity");
+AdafruitIO_Feed *gas_sensor = aio.feed("gas_sensor");
 
 //Adafruit_IO_Feed lightFeed = aio.getFeed("light");
 
@@ -149,6 +150,7 @@ void setup() {
 
    temperature->save(t);
    humidity->save(h);
+   gas_sensor->save(reading);
    
   // wait one second (1000 milliseconds == 1 second)
   delay(6000);
