@@ -5,6 +5,10 @@ When composting optimal conditions must be maintained in order to prevent produc
 
 Composting is very good for sustainablility; besides reducing carbon emmisions it has many additonal benefits
 
+
+### Architecture
+
+
 ### libraries
 
 Adafruit Unified Sensor  
@@ -18,6 +22,3 @@ Arduino Http Client
 Adafruit MQTT library  
 
 Adafruit IO Arduino  
-
-### Architecture
-
