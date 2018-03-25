@@ -19,3 +19,5 @@ Adafruit MQTT library
 
 Adafruit IO Arduino  
 
+### Architecture
+
