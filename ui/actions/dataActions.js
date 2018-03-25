@@ -54,7 +54,7 @@ function setGasData(data) {
 }
 
 export const getGasData = () => dispatch => {
-  adafruitAPI.get('/gas_sensor')
+  adafruitAPI.get('/gas-sensor')
     .then(response => {
       dispatch(setGasData(response.data))
     })
